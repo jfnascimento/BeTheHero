@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Jefferson\AppData\Local\Android\Sdk\tools;C:\Users\Jefferson\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jefferson\AppData\Local\Microsoft\WindowsApps;C:\Users\Jefferson\AppData\Local\Yarn\bin;C:\Users\Jefferson\AppData\Local\atom\bin;C:\Users\Jefferson\AppData\Roaming\npm;C:\Users\Jefferson\AppData\Local\Microsoft\WindowsApps;C:\Users\Jefferson\.dotnet\tools;C:\Users\Jefferson\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Jefferson\AppData\Local\Android\Sdk\tools;C:\Users\Jefferson\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\MongoDB\Server\4.2\bin;
+
+Yarn version: 
+  1.19.2
+
+Node version: 
+  12.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~36.0.0",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-screens": "2.0.0-alpha.12",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "@types/react": "~16.9.0",
+      "@types/react-native": "~0.60.23",
+      "@babel/core": "^7.0.0",
+      "babel-preset-expo": "~8.0.0",
+      "typescript": "~3.6.3"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
