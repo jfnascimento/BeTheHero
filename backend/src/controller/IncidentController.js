@@ -7,8 +7,8 @@ module.exports = {
     
     const incidents = await connecton('incidents')
       .join('ongs', 'ong_id', '=', 'incidents.ong_id')
-      .limit(5)
-      .offset((page - 1) * 5)
+      .limit(10)
+      .offset((page - 1) * 10)
       .select([
         'incidents.*',
         'ongs.name',
@@ -41,7 +41,10 @@ module.exports = {
     const {id} = request.params;
     const ong_id = request.headers.authorization;
     const incident = await connecton('incidents')
-      .where('id', id).select('ong_id').first();
+      .where('id', id)
+      .select('ong_id')
+      .first();
+      
     if(incident.ong_id !== ong_id) {
       return response.status(401).json({error: 'Operation not permited'});
     }
